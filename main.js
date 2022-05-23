@@ -4,19 +4,19 @@ var app = new Vue({
         todos: [
             {
                 text: "Fare la spesa",
-                done: true,
+                done: false,
             },
             {
                 text: "Workout",
-                done: true,
+                done: false,
             },
             {
                 text: "Studiare",
-                done: true,
+                done: false,
             },
             {
                 text: "Aggiustare il lavello",
-                done: true,
+                done: false,
             },
         ],
         newToDo: "",
@@ -27,7 +27,7 @@ var app = new Vue({
             if (this.newToDo !== " ") {
                 newToDo = {
                     text: this.newToDo,
-                    done: true,
+                    done: false,
                 }
                 this.todos.push(newToDo);
                 this.newToDo = "";
@@ -35,6 +35,13 @@ var app = new Vue({
         },
         removeToDo(index) {
             this.todos.splice(index, 1);
-        }
+        },
+        toDoDone(index) {
+            if (this.todos[index].done === false) {
+                this.todos[index].done = true;
+            } else {
+                this.todos[index].done = false;
+            }
+        },
     }
 })

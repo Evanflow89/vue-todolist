@@ -19,7 +19,7 @@ var app = new Vue({
                 done: true,
             },
         ],
-        newToDo: {},
+        newToDo: "",
 
     },
     methods: {

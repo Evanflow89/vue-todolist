@@ -19,12 +19,17 @@ var app = new Vue({
                 done: true,
             },
         ],
-        newToDo: "",
+        newToDo: {},
+
     },
     methods: {
         addToDo() {
             if (this.newToDo !== " ") {
-                this.todos.push(this.newToDo);
+                newToDo = {
+                    text: this.newToDo,
+                    done: true,
+                }
+                this.todos.push(newToDo);
                 this.newToDo = "";
             }
         },

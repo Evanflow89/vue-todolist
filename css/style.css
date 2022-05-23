@@ -22,6 +22,10 @@ h1 {
     font-size: 80px;
 }
 
+.textDone {
+    text-decoration: line-through;
+}
+
 /*--------------
     COMMONS
 --------------*/

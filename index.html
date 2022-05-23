@@ -23,6 +23,11 @@
     <div id="app">
         <div class="container">
             <h1>To Do List <i class="fa-solid fa-list"></i></h1>
+            <div class="listToDos">
+                <ul>
+                    <li v-for="todo in todos">{{ todo.text }} <i class="fa-solid fa-x"></i></li>
+                </ul>
+            </div>
 
         </div>
 

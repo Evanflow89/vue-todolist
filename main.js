@@ -1,22 +1,22 @@
 var app = new Vue({
     el: '#app',
     data: {
-        Todos: [
+        todos: [
             {
                 text: "Fare la spesa",
-                done: true;
+                done: true,
             },
             {
                 text: "Workout",
-                done: true;
+                done: true,
             },
             {
                 text: "Studiare",
-                done: true;
+                done: true,
             },
             {
                 text: "Aggiustare il lavello",
-                done: true;
+                done: true,
             },
         ]
     }

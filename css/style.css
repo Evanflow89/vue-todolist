@@ -1,9 +1,33 @@
+/*--------------
+      RESET
+--------------*/
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/*--------------
+      TEXT
+--------------*/
+
 body {
     font-family: 'Odibee Sans', cursive;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+}
+
+/*--------------
+    COMMONS
+--------------*/
+
+.container {
+    padding-top: 30px;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
 }

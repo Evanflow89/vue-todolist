@@ -25,6 +25,7 @@ h1 {
 
 .textDone {
     text-decoration: line-through;
+    color: red;
 }
 
 h3 {

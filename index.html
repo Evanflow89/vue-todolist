@@ -22,7 +22,14 @@
 <body>
     <div id="app">
         <div class="container">
+
             <h1>To Do List <i class="fa-solid fa-list"></i></h1>
+            <div class="new-Todo">
+                <form>
+                    <input type="text" placeholder="Aggiungi alla lista" v-model="newToDo" required>
+                    <button type="submit">Aggiungi</button>
+                </form>
+            </div>
             <div class="listToDos">
                 <ul>
                     <li v-for="todo in todos">{{ todo.text }} <i class="fa-solid fa-x"></i></li>

@@ -19,5 +19,5 @@ var app = new Vue({
                 done: true,
             },
         ]
-    }
+    }, newToDo: "",
 })

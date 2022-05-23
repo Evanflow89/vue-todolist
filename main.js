@@ -33,5 +33,8 @@ var app = new Vue({
                 this.newToDo = "";
             }
         },
+        removeToDo(index) {
+            this.todos.splice(index, 1);
+        }
     }
 })

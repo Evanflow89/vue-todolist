@@ -32,7 +32,9 @@
             </div>
             <div class="listToDos">
                 <ul>
-                    <li v-for="todo in todos">{{ todo.text }} <i class="fa-solid fa-x"></i></li>
+                    <li v-for="(todo, index) in todos">{{ todo.text }} <i @click="removeToDo(index)"
+                            class="fa-solid fa-x"></i>
+                    </li>
                 </ul>
             </div>
 

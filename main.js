@@ -18,6 +18,15 @@ var app = new Vue({
                 text: "Aggiustare il lavello",
                 done: true,
             },
-        ]
-    }, newToDo: "",
+        ],
+        newToDo: "",
+    },
+    methods: {
+        addToDo() {
+            if (this.newToDo !== " ") {
+                this.todos.push(this.newToDo);
+                this.newToDo = "";
+            }
+        },
+    }
 })

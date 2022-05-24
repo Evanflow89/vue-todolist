@@ -31,12 +31,13 @@
                 </form>
             </div>
             <div class="listToDos">
-                <ul>
+                <ul v-if="todos.length > 0">
                     <li v-for="(todo, index) in todos" :class="{textDone : todos[index].done === true}"
                         @click="toDoDone(index)">{{ todo.text }} <i @click="removeToDo(index)"
                             class="fa-solid fa-x"></i>
                     </li>
                 </ul>
+                <h2 v-else>Aggiungi qualcosa alla lista!</h3>
             </div>
             <h3>Designed with Bestemmie! <i class="fa-solid fa-heart"></i></h3>
         </div>
